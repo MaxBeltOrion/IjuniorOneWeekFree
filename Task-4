@@ -3,3 +3,21 @@ using System;
 namespace Task_1
 {
     class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            string lastName;
+            string age;
+
+            Console.WriteLine("Привет! Как вас зовут?");
+            name = Console.ReadLine();
+            Console.WriteLine("А Фамилия?");
+            lastName = Console.ReadLine();
+            Console.WriteLine("А лет то вам сколько?");
+            age = Console.ReadLine();
+
+            Console.WriteLine($"Итак!!!\nВас зовут - {name},\nФамилия - {lastName},\nВаш возраст - {age}."); 
+        }
+    }
+}
