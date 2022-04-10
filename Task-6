@@ -1,0 +1,19 @@
+using System;
+
+namespace Task_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int range = 3;
+            int picture = 52;
+
+            int completeLine = picture / range;
+            int leftoverPicture = picture % range;
+
+            Console.WriteLine($"Полностью заполненных рядов картинами получилось - {completeLine}");
+            Console.WriteLine($"Лишних картин осталось - {leftoverPicture}");
+        }
+    }
+}
