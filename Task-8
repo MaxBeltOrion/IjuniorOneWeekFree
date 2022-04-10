@@ -1,0 +1,24 @@
+using System;
+
+namespace Task_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int countPeople, waitingTimeHour, waitingTimeMinutes;
+            int minutesPerHour = 60;
+            int fixedAdmissionTime = 10;
+
+            Console.WriteLine("Приветствую тебя в больничке, не переживай, мы тебя починим!!!");
+            Console.Write("Прошу тебя встань в очередь - уточни сколько перед тобой человек? - ");
+            countPeople = Convert.ToInt32(Console.ReadLine());
+
+            waitingTimeHour = countPeople * fixedAdmissionTime / minutesPerHour;
+            waitingTimeMinutes = countPeople * fixedAdmissionTime % minutesPerHour;
+
+            Console.WriteLine($"Время ожидания твоего приёма - {waitingTimeHour}ч. {waitingTimeMinutes}м.");
+
+        }
+    }
+}
