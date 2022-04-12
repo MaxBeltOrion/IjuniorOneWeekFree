@@ -8,7 +8,7 @@ namespace Task_1
         {
             string name = "Бурлык";
             string lastName = "Максим";
-            string patronymic;
+            string temporalValue;
 
             Console.WriteLine($"Имя - {name}, Фамилия - {lastName}");
 
