@@ -12,9 +12,9 @@ namespace Task_1
 
             Console.WriteLine($"Имя - {name}, Фамилия - {lastName}");
 
-            patronymic = name;
+            temporalValue = name;
             name = lastName;
-            lastName = patronymic;
+            lastName = temporalValue;
 
             Console.WriteLine($"Имя - {name}, Фамилия - {lastName}");
         }
