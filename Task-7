@@ -6,20 +6,20 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            int myMoney;
-            int myCristal;
+            int moneyWallet;
+            int cristalWallet;
             int priceCristal = 10;
 
             Console.Write("Привет путник, сколько золотых у тебя есть? - ");
-            myMoney = Convert.ToInt32(Console.ReadLine());
+            moneyWallet = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Предлагаю купить тебе немного кристалов, сколько хочешь? - ");
-            myCristal = Convert.ToInt32(Console.ReadLine());
+            cristalWallet = Convert.ToInt32(Console.ReadLine());
 
-            myMoney -= myCristal * priceCristal;
+            moneyWallet -= cristalWallet * priceCristal;
 
-            Console.Write($"Супер! Теперь у тебя есть ценная валюта, кристаллы - {myCristal}.");
-            Console.Write($"\nА деньжат поубивалось, остаток - {myMoney}.");
+            Console.Write($"Супер! Теперь у тебя есть ценная валюта, кристаллы - {cristalWallet}.");
+            Console.Write($"\nА деньжат поубивалось, остаток - {moneyWallet}.");
         }
     }
 }
