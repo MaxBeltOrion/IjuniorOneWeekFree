@@ -6,18 +6,20 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            int countPeople, waitingTimeHour, waitingTimeMinutes;
-            int minutesPerHour = 60;
+            int countPeople;
+            int waitingHours;
+            int waitingMinutes;
+            int minutesInHour = 60;
             int fixedAdmissionTime = 10;
 
             Console.WriteLine("Приветствую тебя в больничке, не переживай, мы тебя починим!!!");
             Console.Write("Прошу тебя встань в очередь - уточни сколько перед тобой человек? - ");
             countPeople = Convert.ToInt32(Console.ReadLine());
 
-            waitingTimeHour = countPeople * fixedAdmissionTime / minutesPerHour;
-            waitingTimeMinutes = countPeople * fixedAdmissionTime % minutesPerHour;
+            waitingHours = countPeople * fixedAdmissionTime / minutesInHour;
+            waitingMinutes = countPeople * fixedAdmissionTime % minutesInHour;
 
-            Console.WriteLine($"Время ожидания твоего приёма - {waitingTimeHour}ч. {waitingTimeMinutes}м.");
+            Console.WriteLine($"Время ожидания твоего приёма - {waitingHours}ч. {waitingMinutes}м.");
 
         }
     }
