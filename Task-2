@@ -10,7 +10,7 @@ namespace Task_2
             byte age;
             bool isTodaySunny;
             uint distanceToTheMoon;
-            long positionInSpace;
+            long positionSpace;
             ulong speedStarShip;
             sbyte wheatherTemperature;
             string name;
