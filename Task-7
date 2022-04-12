@@ -7,18 +7,18 @@ namespace Task_1
         static void Main(string[] args)
         {
             int moneyWallet;
-            int cristalWallet;
+            int cristalsWallet;
             int priceCristal = 10;
 
             Console.Write("Привет путник, сколько золотых у тебя есть? - ");
             moneyWallet = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Предлагаю купить тебе немного кристалов, сколько хочешь? - ");
-            cristalWallet = Convert.ToInt32(Console.ReadLine());
+            cristalsWallet = Convert.ToInt32(Console.ReadLine());
 
-            moneyWallet -= cristalWallet * priceCristal;
+            moneyWallet -= cristalsWallet * priceCristal;
 
-            Console.Write($"Супер! Теперь у тебя есть ценная валюта, кристаллы - {cristalWallet}.");
+            Console.Write($"Супер! Теперь у тебя есть ценная валюта, кристаллы - {cristalsWallet}.");
             Console.Write($"\nА деньжат поубивалось, остаток - {moneyWallet}.");
         }
     }
