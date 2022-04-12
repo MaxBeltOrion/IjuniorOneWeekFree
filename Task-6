@@ -6,11 +6,11 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            int range = 3;
-            int picture = 52;
+            int pictureRange = 3;
+            int allPictures = 52;
 
-            int completeLine = picture / range;
-            int leftoverPicture = picture % range;
+            int completeLine = allPictures / pictureRange;
+            int leftoverPicture = allPictures % pictureRange;
 
             Console.WriteLine($"Полностью заполненных рядов картинами получилось - {completeLine}");
             Console.WriteLine($"Лишних картин осталось - {leftoverPicture}");
